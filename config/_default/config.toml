@@ -1,4 +1,4 @@
-baseURL = 'https://您的GitHub用户名.github.io/您的仓库名/' # 线上地址保持不变
+baseURL = 'https://blog-7wf.pages.dev/' # 线上地址保持不变
 languageCode = 'zh-cn'
 title = '我的 Obsidian 静态博客'
 theme = 'ananke'
