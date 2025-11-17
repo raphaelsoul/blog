@@ -1,7 +1,13 @@
 baseURL = 'https://blog-7wf.pages.dev/' # 线上地址保持不变
-languageCode = 'zh-cn'
-title = '我的 Obsidian 静态博客'
-theme = 'ananke'
-[pagination]
-  pagerSize = 10
+#languageCode = 'zh-cn'
+#title = '我的 Obsidian 静态博客'
+#theme = 'ananke'
+#[pagination]
+#  pagerSize = 10
 # ... 其他配置 ...
+
+# ... 其他配置项
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-XXGXCHWTVM'
