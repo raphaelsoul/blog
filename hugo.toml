@@ -1,0 +1,40 @@
+# ----------------------------------------
+# 核心配置 (Core Configuration)
+# ----------------------------------------
+baseURL = 'https://您的GitHub用户名.github.io/您的仓库名/' # ⚠️ 必填：更改为您博客的最终 URL
+languageCode = 'zh-cn'
+title = '我的 Obsidian 静态博客'
+theme = 'ananke' # ⚠️ 必填：此处的主题名需与您下一步安装的主题文件夹名一致
+
+# ----------------------------------------
+# 内容配置 (Content Configuration)
+# ----------------------------------------
+# 默认启用草稿（在本地预览时显示，部署时忽略）
+buildDrafts = true 
+
+[params]
+  # 您的博客描述
+  description = "使用 Hugo 和 GitHub Actions 自动部署的 Obsidian 笔记"
+  # 顶部导航栏配置（取决于主题）
+  # 例如：homeText = "首页" 
+  
+# ----------------------------------------
+# 分页配置 (Pagination)
+# ----------------------------------------
+[pagination]
+  pagerSize = 10 # 每页文章数
+
+# ----------------------------------------
+# 语法高亮 (Syntax Highlighting)
+# ----------------------------------------
+[markup.highlight]
+  anchorLineNos = false
+  codeFences = true
+  guessSyntax = true
+  hl_Lines = ''
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = false
+  style = 'monokai' # 代码高亮主题
+  tabWidth = 4

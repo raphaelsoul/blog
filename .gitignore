@@ -1,0 +1,32 @@
+# Hugo 生成的静态网站文件
+# 这是构建后的最终输出目录，应由 CI/CD 流程生成
+/public/
+
+# Hugo 缓存目录
+# 加速本地构建，但不应该提交到 Git
+/.hugo_cache/
+
+# 编译和临时文件
+# 如果您使用了 SCSS 或其他前端构建工具，可能需要忽略
+/resources/_gen/
+/assets/js/
+/assets/css/
+
+# 本地开发和 IDE 文件
+# 忽略 WebStorm/VS Code/其他 IDE 生成的本地配置文件
+.DS_Store
+.vscode/
+.idea/
+
+# Windows/macOS 临时文件
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+.localized
+
+# Obsidian 自身的文件
+# 忽略 Obsidian 内部设置，因为这些设置通常是本地特有的
+.obsidian/
+
+# Hugo 命令的本地锁文件（可选）
+.hugo_build.lock
