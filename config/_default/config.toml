@@ -1,7 +1,7 @@
 baseURL = 'https://blog.cyberselab.com/' # 线上地址保持不变
 #languageCode = 'zh-cn'
 #title = '我的 Obsidian 静态博客'
-#theme = 'ananke'
+theme = 'hugo-theme-stack'
 #[pagination]
 #  pagerSize = 10
 # ... 其他配置 ...
@@ -11,3 +11,21 @@ baseURL = 'https://blog.cyberselab.com/' # 线上地址保持不变
 [services]
   [services.googleAnalytics]
     ID = 'G-XXGXCHWTVM'
+
+[params]
+  mainSections = ["post"]
+  [params.sidebar]
+    [params.sidebar.avatar]
+      enabled = true
+      src = "avatar.png"
+
+    [[params.sidebar.widgets]]
+      type = "search"    # 强烈建议开启搜索，这是 stack 主题的核心
+
+    [[params.sidebar.widgets]]
+      type = "categories"
+      limit = 10
+
+    [[params.sidebar.widgets]]
+      type = "tags"
+      limit = 20
