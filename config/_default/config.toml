@@ -1,12 +1,7 @@
-baseURL = 'https://blog.cyberselab.com/' # 线上地址保持不变
-#languageCode = 'zh-cn'
-#title = '我的 Obsidian 静态博客'
+baseURL = 'https://blog.cyberselab.com/'
+languageCode = 'zh-cn'
+title = 'Cyberselab'
 theme = 'hugo-theme-stack'
-#[pagination]
-#  pagerSize = 10
-# ... 其他配置 ...
-
-# ... 其他配置项
 
 [services]
   [services.googleAnalytics]
@@ -14,18 +9,53 @@ theme = 'hugo-theme-stack'
 
 [params]
   mainSections = ["post"]
+  
   [params.sidebar]
+    subtitle = "我的个人博客"
     [params.sidebar.avatar]
       enabled = true
+      local = true
       src = "avatar.png"
 
-    [[params.sidebar.widgets]]
-      type = "search"    # 强烈建议开启搜索，这是 stack 主题的核心
+  [params.widgets]
+    [[params.widgets.homepage]]
+        type = "search"
 
-    [[params.sidebar.widgets]]
-      type = "categories"
-      limit = 10
+    [[params.widgets.homepage]]
+        type = "archives"
+        [params.widgets.homepage.params]
+            limit = 5
 
-    [[params.sidebar.widgets]]
-      type = "tags"
-      limit = 20
+    [[params.widgets.homepage]]
+        type = "categories"
+        [params.widgets.homepage.params]
+            limit = 10
+
+    [[params.widgets.homepage]]
+        type = "tag-cloud"
+        [params.widgets.homepage.params]
+            limit = 10
+
+[[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+    [menu.main.params]
+        icon = "home"
+
+[[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 2
+    [menu.main.params]
+        icon = "archives"
+
+[[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 3
+    [menu.main.params]
+        icon = "search"
